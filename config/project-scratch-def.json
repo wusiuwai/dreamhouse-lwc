@@ -1,6 +1,6 @@
 {
-    "orgName": "Dreamhouse",
-    "edition": "Developer",
+    "orgName": "Alexity Dreamhouse",
+    "template": "0TTC800000005Vx",
     "features": ["Walkthroughs", "EnableSetPasswordInApi"],
     "settings": {
         "lightningExperienceSettings": {

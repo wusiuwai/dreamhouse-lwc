@@ -1,18 +1,38 @@
 {
   "packageDirectories": [
     {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
       "path": "force-app",
       "default": true,
-      "package": "DreamhouseLWC",
-      "versionName": "Summer '25",
-      "versionNumber": "64.0.0.NEXT"
+      "package": "Alexity-dreamhouse",
+      "versionDescription": ""
     }
   ],
-  "namespace": "",
+  "namespace": "Alexity",
   "sourceApiVersion": "64.0",
   "packageAliases": {
     "DreamhouseLWC": "0Ho3h000000PBghCAG",
     "DreamhouseLWC@61.0.0-4": "04tKY000000LP3aYAG",
-    "DreamhouseLWC@64.0.0-3": "04tKY000000MF7uYAG"
+    "DreamhouseLWC@64.0.0-3": "04tKY000000MF7uYAG",
+    "dreamhouse-lwc": "0HoC800000000jBKAQ",
+    "Alexity-dreamhouse": "0HoC800000000knKAA",
+    "Alexity-dreamhouse@0.1.0-1": "04tC80000000AsDIAU",
+    "Alexity-dreamhouse@0.1.0-2": "04tC80000000AtpIAE",
+    "Alexity-dreamhouse@0.1.0-3": "04tC80000000AvRIAU",
+    "Alexity-dreamhouse@0.1.0-4": "04tC80000000Ax3IAE",
+    "Alexity-dreamhouse@0.1.0-5": "04tC80000000AyfIAE",
+    "Alexity-dreamhouse@0.1.0-6": "04tC80000000B0HIAU",
+    "Alexity-dreamhouse@0.1.0-7": "04tC80000000B1tIAE",
+    "Alexity-dreamhouse@0.1.0-8": "04tC80000000B3VIAU",
+    "Alexity-dreamhouse@0.1.0-9": "04tC80000000B57IAE",
+    "Alexity-dreamhouse@0.1.0-10": "04tC80000000B6jIAE",
+    "Alexity-dreamhouse@0.1.0-11": "04tC80000000B8LIAU",
+    "Alexity-dreamhouse@0.1.0-12": "04tC80000000B9xIAE",
+    "Alexity-dreamhouse@0.1.0-13": "04tC80000000BBZIA2",
+    "Alexity-dreamhouse@0.1.0-14": "04tC80000000BDBIA2",
+    "Alexity-dreamhouse@0.1.0-15": "04tC80000000BEnIAM",
+    "Alexity-dreamhouse@0.1.0-16": "04tC80000000BGPIA2",
+    "Alexity-dreamhouse@0.1.0-17": "04tC80000000BI1IAM"
   }
 }
