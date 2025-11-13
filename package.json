@@ -1,7 +1,7 @@
 {
     "name": "@salesforce/dreamhouse-lwc",
     "version": "1.0.0",
-    "description": "Alexity Dreamhouse Sample App - Lightning Web Components",
+    "description": "SoA Dreamhouse Sample App - Lightning Web Components",
     "scripts": {
         "lint": "eslint **/lwc/**/*.js",
         "test": "npm run test:unit",
@@ -29,7 +29,7 @@
     "license": "CC0-1.0",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/trailheadapps/dreamhouse-lwc"
+        "url": "git+https://github.com/wusiuwai/dreamhouse-lwc"
     },
     "devDependencies": {
         "@lwc/eslint-plugin-lwc": "^3.2.0",
