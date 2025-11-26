@@ -5,5 +5,4 @@
     <eventType>StandardVolume</eventType>
     <label>fromAuraEvent</label>
     <publishBehavior>PublishImmediately</publishBehavior>
-    <retentionPolicy>Retention72Hours</retentionPolicy>
 </CustomObject>
