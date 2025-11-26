@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants Publish and Subscribe access to fromJavaEvent__e platform event to all assigned users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>fromJavaEvent Access</label>
+    <eventPermissions>
+        <enabled>true</enabled>
+        <name>fromJavaEvent__e</name>
+        <publish>true</publish>
+        <subscribe>true</subscribe>
+    </eventPermissions>
+</PermissionSet>

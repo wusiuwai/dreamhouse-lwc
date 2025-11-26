@@ -1,0 +1,40 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+    <aura:attribute name="isConnected" type="Boolean" default="false"/>
+    <aura:attribute name="replayId" type="Long" default="-1"/>
+    <aura:attribute name="subscription" type="Object"/>
+    <aura:attribute name="events" type="List" default="[]"/>
+    <aura:attribute name="channel" type="String" default="/event/fromAuraEvent__e"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:card title="fromAuraEvent__e Subscriber (empApi)">
+        <div class="slds-p-horizontal_small slds-p-vertical_x-small slds-text-body_small">
+            <p>Status: {!v.isConnected ? 'Subscribed' : 'Not Subscribed'}</p>
+            <p>Channel: {!v.channel}</p>
+            <p>ReplayId: {!v.replayId}</p>
+        </div>
+        <lightning:button variant="brand" title="Subscribe" label="Subscribe" onclick="{!c.handleSubscribe}" disabled="{!v.isConnected}"/>
+        <lightning:button variant="destructive" title="Unsubscribe" label="Unsubscribe" onclick="{!c.handleUnsubscribe}" disabled="{!not(v.isConnected)}"/>
+        <lightning:button title="Clear" label="Clear Events" onclick="{!c.handleClear}" class="slds-m-left_x-small"/>
+        <div class="slds-m-top_medium slds-scrollable_y" style="max-height: 300px;">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th scope="col"><div class="slds-truncate" title="Time">Time</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Severity">Severity</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Source">Source</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Message">Message</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.events}" var="e" indexVar="idx">
+                        <tr key="{!idx}">
+                            <td><ui:outputText value="{!e.time}"/></td>
+                            <td><ui:outputText value="{!e.severity}"/></td>
+                            <td><ui:outputText value="{!e.source}"/></td>
+                            <td><ui:outputText value="{!e.message}"/></td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </div>
+    </lightning:card>
+</aura:component>

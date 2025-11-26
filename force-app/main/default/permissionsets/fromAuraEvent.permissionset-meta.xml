@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants Publish and Subscribe access to fromAuraEvent__e platform event to all assigned users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>fromAuraEvent Access</label>
+    <eventPermissions>
+        <enabled>true</enabled>
+        <name>fromAuraEvent__e</name>
+        <publish>true</publish>
+        <subscribe>true</subscribe>
+    </eventPermissions>
+</PermissionSet>

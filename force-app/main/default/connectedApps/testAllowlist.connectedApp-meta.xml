@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>testAllowlist</label>
+    <contactEmail>no-reply@example.com</contactEmail>
+    <oauthConfig>
+        <!-- Allow common interactive and long-lived access -->
+        <callbackUrl>https://localhost/callback</callbackUrl>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <isConsumerSecretRequired>false</isConsumerSecretRequired>
+        <isOauthRefreshTokenFlowAllowed>true</isOauthRefreshTokenFlowAllowed>
+        <isOauthWebServerFlowAllowed>true</isOauthWebServerFlowAllowed>
+        <isIntrospectAllTokens>true</isIntrospectAllTokens>
+    </oauthConfig>
+    <!-- Relax restrictions for development/testing -->
+    <ipRelaxation>RELAX_IP</ipRelaxation>
+    <uiLoginFlow></uiLoginFlow>
+</ConnectedApp>
